@@ -1,6 +1,6 @@
 import React from "react";
 import "./Navbar.css";
-import person1 from "../../assets/people/person1.jpeg";
+import person from "../../assets/people/person1.jpeg";
 import { Search, Person, Chat, Notifications } from "@mui/icons-material";
 
 export default function Navbar() {
@@ -35,7 +35,7 @@ export default function Navbar() {
           </div>
         </div>
         <img
-          src={person1}
+          src={person}
           alt=""
           className="navbarProfileImage"
         />
