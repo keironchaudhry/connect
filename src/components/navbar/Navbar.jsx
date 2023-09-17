@@ -6,39 +6,35 @@ import { Search, Person, Chat, Notifications } from "@mui/icons-material";
 export default function Navbar() {
   return (
     <div className={styles.navbarContainer}>
-      <div className="navbarLeft">
-        <span className="logo">Connect</span>
+      <div className={styles.navbarLeft}>
+        <span className={styles.logo}>Connect</span>
       </div>
-      <div className="navbarCentre">
-        <div className="searchBar">
-          <Search className="searchIcon" />
-          <input placeholder="Search away..." className="searchInput" />
+      <div className={styles.navbarCentre}>
+        <div className={styles.searchBar}>
+          <Search className={styles.searchIcon} />
+          <input placeholder="Search away..." className={styles.searchInput} />
         </div>
       </div>
-      <div className="navbarRight">
-        <div className="navbarLinks">
-          <span className="navbarLink">Home</span>
-          <span className="navbarLink">Feed</span>
+      <div className={styles.navbarRight}>
+        <div className={styles.navbarLinks}>
+          <span className={styles.navbarLink}>Home</span>
+          <span className={styles.navbarLink}>Feed</span>
         </div>
-        <div className=".navbarIcons">
-          <div className="navbarIconItem">
+        <div className={styles.navbarIcons}>
+          <div className={styles.navbarIconItem}>
             <Person />
-            <span className="navbarIconBadge">1</span>
+            <span className={styles.navbarIconBadge}>1</span>
           </div>
-          <div className="navbarIconItem">
+          <div className={styles.navbarIconItem}>
             <Chat />
-            <span className="navbarIconBadge">2</span>
+            <span className={styles.navbarIconBadge}>2</span>
           </div>
-          <div className="navbarIconItem">
+          <div className={styles.navbarIconItem}>
             <Notifications />
-            <span className="navbarIconBadge">1</span>
+            <span className={styles.navbarIconBadge}>1</span>
           </div>
         </div>
-        <img
-          src={person}
-          alt=""
-          className="navbarProfileImage"
-        />
+        <img src={person} alt="User Profile Picture" className={styles.navbarProfileImage} />
       </div>
     </div>
   );
