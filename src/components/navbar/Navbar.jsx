@@ -1,6 +1,7 @@
 import React from "react";
 import "./Navbar.css";
-import { Search, Person } from "@mui/icons-material";
+import person1 from "../../assets/people/person1.jpeg";
+import { Search, Person, Chat, Notifications } from "@mui/icons-material";
 
 export default function Navbar() {
   return (
@@ -24,7 +25,20 @@ export default function Navbar() {
             <Person />
             <span className="navbarIconBadge">1</span>
           </div>
+          <div className="navbarIconItem">
+            <Chat />
+            <span className="navbarIconBadge">2</span>
+          </div>
+          <div className="navbarIconItem">
+            <Notifications />
+            <span className="navbarIconBadge">1</span>
+          </div>
         </div>
+        <img
+          src={person1}
+          alt=""
+          className="navbarProfileImage"
+        />
       </div>
     </div>
   );
