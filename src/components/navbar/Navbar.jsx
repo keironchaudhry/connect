@@ -1,11 +1,11 @@
 import React from "react";
-import "./Navbar.css";
+import styles from "./Navbar.module.css";
 import person from "../../assets/people/person1.jpeg";
 import { Search, Person, Chat, Notifications } from "@mui/icons-material";
 
 export default function Navbar() {
   return (
-    <div className="navbarContainer">
+    <div className={styles.navbarContainer}>
       <div className="navbarLeft">
         <span className="logo">Connect</span>
       </div>
